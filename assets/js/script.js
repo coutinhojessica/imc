@@ -109,7 +109,7 @@ btn.addEventListener("click", (event) => {
       let categoriaPeso = definirStatusIMC(calculoIMC);
       let resultadoFinal = converterParaVirgula(calculoIMC.toFixed(2))
 
-      texto.innerHTML = statusPeso[categoriaPeso].texto + `<br> Seu IMC está em: ${resultadoFinal}`;
+      texto.innerHTML = statusPeso[categoriaPeso].texto + `<br> Seu Índice de Massa Corporal (IMC) está em: ${resultadoFinal}`;
     }   
     
 
