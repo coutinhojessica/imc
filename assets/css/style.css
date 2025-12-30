@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background: #d98d3d;
+    background: radial-gradient(circle, rgba(217, 141, 61, 1) 0%, rgba(11, 79, 112, 1) 100%);
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+#forms {
+    background-color: rgba(250, 235, 215, 0.226);
+    padding: 10px;
+    width: 50%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+fieldset {
+    border: none;
+    margin: 15px 0;
+}
+
+#altura,
+#peso {
+    outline: none;
+    height: 30px;
+    width: 20rem;
+    background-color: rgba(245, 245, 245, 0.705);
+    border: 1px solid rgba(0, 0, 0, 0.747);
+    padding: 10px;
+    font-size: 1rem;
+}
+
+label {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+.msgPeso,
+.msgAltura {
+    color: brown;
+    font-weight: 400;
+    margin-top: 5px;
+    height: 20px;
+}
+
+.msgErroCalculo{
+    height: 30px;
+}
+
+#btn {
+    width: 10rem;
+    height: 45px;
+    background-color: rgba(11, 79, 112);
+    font-size: 1rem;
+    color: whitesmoke;
+    border: 1px solid black;
+    box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.445);
+    transition: 500ms ease-in-out;
+    margin-top: 10px;
+}
+
+#btn:hover {
+    background-color: #d98d3d;
+    border: 1px solid whitesmoke;
+}
+
+.resultado {
+    background-color: rgba(250, 235, 215, 0.226);
+    width: 50%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+@media (max-width: 425px){
+    #forms{
+        width: 100%;
+    }
+    .resultado{
+        width: 100%;
+    }
+}
